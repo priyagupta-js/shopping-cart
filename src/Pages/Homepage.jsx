@@ -1,17 +1,20 @@
-import product from "../Components/productlist";
+import product from "../productlist";
 import Product from "../Components/Product";
 import Navabar from "../Components/Navbar";
-function Homepage()
-{
-    return(
-        <>
-        <Navabar />
-        
+function Homepage() {
+  return (
+    <>
+      <Navabar />
+      {product.map((item) => (
         <Product
-        img={product[0].imgUrl}
-        pname={product[0].name}
-        desp={product[0].description}
-        price={product[0].price}
+          key={item.id}
+          img={item.imgUrl}
+          pname={item.name}
+          desp={item.description}
+          price={item.price}
+        />
+      ))}
+      {/* 
       />
       <Product
         img={product[1].imgUrl}
@@ -24,9 +27,9 @@ function Homepage()
         pname={product[2].name}
         desp={product[2].description}
         price={product[2].price}
-      />
-      </>
-    );
+      /> */}
+    </>
+  );
 }
 
 export default Homepage;
