@@ -9,7 +9,7 @@ function Product(props) {
           <div className="prod-details">
             <h4>{props.pname}</h4>
             <p className="prod-desp">{props.desp}</p>
-            <p className="price">{props.price}</p>
+            <p className="price">₹{props.price}</p>
           </div>
           <button type="button" className="add-to-cart">
             Add to cart
