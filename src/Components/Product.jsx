@@ -1,6 +1,16 @@
+import { useState } from "react";
 import "../Components/styles.css";
 
+
+
+
 function Product(props) {
+  const [quantity , setQuantity] = useState({});
+
+  const addToCart = () =>
+  {
+console.log("clicked");
+  }
   return (
     <>
       <div className="product-container">
@@ -11,11 +21,19 @@ function Product(props) {
             <p className="prod-desp">{props.desp}</p>
             <p className="price">₹{props.price}</p>
           </div>
+          {/* <div className="Q-controls">
+          {quantity>0? (
+
+          ):( */}
+
           <button type="button" className="add-to-cart">
             Add to cart
           </button>
+        {/* )}; */}
+          </div>
+         
         </div>
-      </div>
+      {/* </div> */}
       </>
   );
 }
