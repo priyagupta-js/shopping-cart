@@ -1,41 +1,63 @@
 import { useState } from "react";
 import "../Components/styles.css";
+import products from "../productlist";
 
 
+function Product() {
+  const [quantities , setQuantities] = useState({});
 
-
-function Product(props) {
-  const [quantity , setQuantity] = useState({});
-
-  const addToCart = () =>
+  const handleAddToCart = (product) =>{
   {
-console.log("clicked");
+    // console.log(product)
+    setQuantities((prev) =>{
+      const current_quantity = prev[product.id] || 1;
+      return {
+        ...prev,
+        [product.id] : {...product , quantity:current_quantity+1,
+
+        },
+      };
+    });
+  }};
+
+  const decreaseQuantity =() =>
+  {
+setQuantities()
   }
-  return (
+  const increaseQuantity =() =>
+    {
+      
+    }
+    return (
     <>
-      <div className="product-container">
-        <div className="product-card">
-          <img src={props.img} alt="image" className="prod-img" />
+      {products.map((item) => (
+        <div className="product-card" key={item.id}>
+          <img src={item.imgUrl} alt={item.name} className="prod-img" />
           <div className="prod-details">
-            <h4>{props.pname}</h4>
-            <p className="prod-desp">{props.desp}</p>
-            <p className="price">₹{props.price}</p>
+            <h4>{item.name}</h4>
+            <p className="prod-desp">{item.description}</p>
+            <p className="price">₹{item.price}</p>
           </div>
-          {/* <div className="Q-controls">
-          {quantity>0? (
-
-          ):( */}
-
-          <button type="button" className="add-to-cart">
-            Add to cart
+        <div className="Q-controls">
+          {quantities[item.id]>0? (
+            <div className="btn-controls">
+            <button className="Q-btn" onClick={() => decreaseQuantity(item)}>-</button> 
+            <span className="Q-number"> {quantities[item.id]}</span>
+            <button className="Q-btn" onClick={() => increaseQuantity(item)}>+</button>
+            </div>   
+          
+          ):
+          (
+          <button type="button" className="add-to-cart" onClick={()=> handleAddToCart(item)}>
+            Add to Cart
           </button>
-        {/* )}; */}
-          </div>
-         
+        )}
         </div>
-      {/* </div> */}
+        </div>
+      ))
+    };
       </>
-  );
-}
+    )};
+ 
 
 export default Product;

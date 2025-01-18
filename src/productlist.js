@@ -47,6 +47,6 @@ const product = [
         imgUrl:VitCcream,
     },
 
-]
+];
 
 export default product;

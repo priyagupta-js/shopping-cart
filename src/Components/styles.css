@@ -119,4 +119,37 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 }
+
+.btn-controls
+{
+    display: flex;
+    align-items: center;
+    padding: 8px 4px;
+    margin: 0 4px 8px 4px;
+    width: 96%;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+.Q-btn{
+    background-color: #000;
+    border: none;
+    padding:  10px 20px;
+    font-size: 20px;
+    outline: none;
+}
+.Q-number{
+    margin: 0 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: 20px;
+}
+.Q-btn:hover{
+    background-color:#f1f1f1;
+}
 /* product styling */
