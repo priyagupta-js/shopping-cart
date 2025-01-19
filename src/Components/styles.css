@@ -83,11 +83,12 @@
     border: none;
     border-radius: 5px;
     margin: 20px 0;
+    cursor: pointer;
 }
 
-.product-card:hover
+ .product-card:hover
 {
-    box-shadow: 1px 1px 12px 2px #4d4d4d;
+    box-shadow: 1px 1px 12px -2px #4d4d4d;
     /* h-offset v-offset blur spread colo */
 }
 
@@ -153,3 +154,10 @@ cursor: pointer;
     background-color:#f1f1f1;
 }
 /* product styling */
+
+/* Display product features */
+
+.section
+{
+    display: flex;
+}
