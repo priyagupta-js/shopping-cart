@@ -8,6 +8,8 @@ function Navabar()
 
     const [count,setCount] =useState(0);
 
+
+    
     return(
         <>
         <div className="nav">
@@ -15,6 +17,9 @@ function Navabar()
                 <div className="logo">Navbar</div>
             </div>
             <div className="nav-right">
+            <div className="Home">Home</div>
+            <div className="About">About Us</div>
+            <div className="Contact">Contact Us</div>
             <div className="search-bar">
                 <TbZoom />
                 <input type="text" placeholder="Search..." />

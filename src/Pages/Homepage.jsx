@@ -1,15 +1,15 @@
 // import product from "../productlist";
-// import Product from "../Components/Product";
+import Product from "../Components/Product";
 import Navabar from "../Components/Navbar";
 import "../Components/styles.css";
-import DisplayProduct from "./DisplayProduct";
+// import DisplayProduct from "./DisplayProduct";
 function Homepage() {
   return (
     <>
       <Navabar />
       <div className="product-main">
-        {/* <Product/> */}
-        <DisplayProduct/>
+        <Product/>
+        {/* <DisplayProduct/> */}
       </div>
     </>
   );
