@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "../Components/styles.css";
 import products from "../productlist";
+import "../styles.css";
 
 
 function Product() {

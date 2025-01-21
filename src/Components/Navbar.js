@@ -2,6 +2,8 @@ import { IoCartSharp } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { TbZoom } from "react-icons/tb";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import "../styles.css";
 
 function Navabar()
 {
@@ -17,16 +19,16 @@ function Navabar()
                 <div className="logo">Navbar</div>
             </div>
             <div className="nav-right">
-            <div className="Home">Home</div>
-            <div className="About">About Us</div>
-            <div className="Contact">Contact Us</div>
+            <Link to="/" className="navlink"><div className="home">Home</div></Link>
+            <Link to="/about" className="navlink"><div className="about">About Us</div></Link>
+            <Link to="/contact"  className="navlink"><div className="contact">Contact Us</div></Link>
             <div className="search-bar">
                 <TbZoom />
                 <input type="text" placeholder="Search..." />
             </div>
-               <FaUser size={20}/>
+               <Link to="/account" className="navlink"><FaUser size={20}/></Link>
                <div className="cart-icon">
-                <span><IoCartSharp size={25}/></span>
+               <Link to="/cart" className="navlink"><span><IoCartSharp size={25}/></span></Link>
                 <span className="badge">{count}</span>
                </div>
             </div>

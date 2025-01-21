@@ -70,6 +70,14 @@
   }
 /* Navbar styling */
 
+.navlink
+{text-decoration: none;
+    color: #000;
+}
+
+.home , .about , .contact{
+    font-weight: 600;
+}
 /* product styling */
  .product-main
  {
