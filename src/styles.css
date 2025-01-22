@@ -171,4 +171,16 @@ cursor: pointer;
 .section
 {
     display: flex;
+    justify-content:flex-start;
+    margin:10px 20px;
+    gap: 45px;
+}
+/* .img-section
+{
+    width: 100px;
+} */
+
+.prod-img
+{
+    width: 550px;
 }

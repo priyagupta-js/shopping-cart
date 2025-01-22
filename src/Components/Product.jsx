@@ -1,5 +1,6 @@
 import { useState } from "react";
 import products from "../productlist";
+import {Link} from "react-router-dom";
 import "../styles.css";
 
 
@@ -31,6 +32,7 @@ setQuantities()
     return (
     <>
       {products.map((item) => (
+        <Link to="/displayproduct" className="navlink">
         <div className="product-card" key={item.id}>
           <img src={item.imgUrl} alt={item.name} className="prod-img" />
           <div className="prod-details">
@@ -54,8 +56,9 @@ setQuantities()
         )}
         </div>
         </div>
+        </Link>
       ))
-    };
+    }
       </>
     )};
  

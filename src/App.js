@@ -4,6 +4,7 @@ import About from "../src/Pages/About";
 import Contact from "../src/Pages/Contact";
 import Account from "./Pages/Account";
 import Cart from "./Pages/Cart";
+import DisplayProduct from "./Pages/DisplayProduct";
 function App() {
   
 
@@ -15,6 +16,7 @@ function App() {
       <Route path="contact" element={<Contact />}/>
       <Route path="account" element={<Account />}/>
       <Route path="cart" element={<Cart />} />
+      <Route path="displayproduct" element={<DisplayProduct />}/>
       </Routes>
     </BrowserRouter>
   );
