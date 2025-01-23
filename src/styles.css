@@ -16,6 +16,9 @@
     background-color: #fff;
     box-shadow: 1px 1px 12px #b7b7b7;
 }
+
+@media (max-width:600px) {
+}
 .logo
 {
     font-size: 25px;
@@ -180,7 +183,7 @@ cursor: pointer;
     width: 100px;
 } */
 
-.prod-img
+.prod-image
 {
     width: 550px;
 }

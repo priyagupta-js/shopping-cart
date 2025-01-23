@@ -8,7 +8,7 @@ return(
     <Navabar />
         <div className="section">
             <div className="img-section">
-                <img className="prod-img"src={PImg} alt="..."/>
+                <img className="prod-image"src={PImg} alt="..."/>
             </div>
             <div className="details-section">
                 <h3>Product name</h3>

@@ -13,7 +13,6 @@ function Navabar()
 
     
     return(
-        <>
         <div className="nav">
             <div className="nav-left">
                 <div className="logo">Navbar</div>
@@ -33,7 +32,6 @@ function Navabar()
                </div>
             </div>
         </div>
-        </>
     );
 }
 
