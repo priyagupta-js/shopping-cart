@@ -3,6 +3,7 @@ import { FaUser } from "react-icons/fa";
 import { TbZoom } from "react-icons/tb";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { CiMenuBurger } from "react-icons/ci";
 import "../styles.css";
 
 function Navabar()
@@ -29,6 +30,9 @@ function Navabar()
                <div className="cart-icon">
                <Link to="/cart" className="navlink"><span><IoCartSharp size={25}/></span></Link>
                 <span className="badge">{count}</span>
+               </div>
+               <div className="burger">
+                <CiMenuBurger />
                </div>
             </div>
         </div>
