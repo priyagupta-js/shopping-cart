@@ -22,11 +22,6 @@
     cursor: pointer;
 }
 
-@media (max-width: 430px) {
-.burger{
-    display: flex;
-}
-}
 .logo
 {
     font-size: 25px;
@@ -79,6 +74,15 @@
     line-height: 1;
     /* transform: translate(50%, -50%); */
   }
+
+  @media (max-width: 430px) {
+    .nav-right{
+        display:none;
+    }
+.burger{
+    display: flex;
+}
+}
 /* Navbar styling */
 
 .navlink

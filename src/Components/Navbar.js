@@ -11,7 +11,10 @@ function Navabar()
 
     const [count,setCount] =useState(0);
 
-
+    function handleClick()
+    {
+        console.log('hello world');
+    }
     
     return(
         <div className="nav">
@@ -26,14 +29,14 @@ function Navabar()
                 <TbZoom />
                 <input type="text" placeholder="Search..." />
             </div>
-               <Link to="/account" className="navlink"><FaUser size={20}/></Link>
-               <div className="cart-icon">
-               <Link to="/cart" className="navlink"><span><IoCartSharp size={25}/></span></Link>
-                <span className="badge">{count}</span>
-               </div>
-               <div className="burger">
+            <Link to="/account" className="navlink"><FaUser size={20}/></Link>
+            <div className="cart-icon">
+            <Link to="/cart" className="navlink"><span><IoCartSharp size={25}/></span></Link>
+            <span className="badge">{count}</span>
+            </div>
+            </div>
+            <div className="burger" onClick={handleClick}>
                 <CiMenuBurger />
-               </div>
             </div>
         </div>
     );
