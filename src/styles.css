@@ -210,3 +210,10 @@ cursor: pointer;
 {
     line-height: 2;
 }
+@media (max-width: 430px)
+{
+    .img-section
+    {
+        display: block;
+    }
+}
