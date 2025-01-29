@@ -76,6 +76,10 @@
   }
 
   @media (max-width: 430px) {
+    .nav
+    {
+        width:430px;
+    }
     .nav-right{
         display:none;
     }
@@ -206,12 +210,24 @@ cursor: pointer;
 {
     width: 550px;
 }
+.prod-image:hover
+{
+    box-shadow: 1px 1px 12px -2px #4d4d4d;
+}
 .details-section
 {
     line-height: 2;
 }
 @media (max-width: 430px)
 {
+    .section
+    {
+        display: block;
+    }
+    .prod-image
+{
+    width: 350px;
+}
     .img-section
     {
         display: block;
