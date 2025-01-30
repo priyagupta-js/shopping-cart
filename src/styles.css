@@ -210,10 +210,10 @@ cursor: pointer;
 {
     width: 550px;
 }
-.prod-image:hover
+/* .prod-image:hover
 {
     box-shadow: 1px 1px 12px -2px #4d4d4d;
-}
+} */
 .details-section
 {
     line-height: 2;
