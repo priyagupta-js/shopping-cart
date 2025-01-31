@@ -46,6 +46,13 @@ const product = [
         price:"290.00",
         imgUrl:VitCcream,
     },
+    {
+        id:7,
+        name:"Moisturing cream - 50gm",
+        description:"Gives 48-Hour* Hydration | Fights Acne & Controls Excess Oil | Lightweight & Non-Greasy",
+        price:"290.00",
+        imgUrl:FaceCream,
+    },
 
 ];
 
