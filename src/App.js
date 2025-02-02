@@ -4,6 +4,7 @@ import About from "../src/Pages/About";
 import Contact from "../src/Pages/Contact";
 import Account from "./Pages/Account";
 import Cart from "./Pages/Cart";
+// import Login from "./Pages/Login";  
 import DisplayProduct from "./Pages/DisplayProduct";
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+      {/* <Login /> */}
       <Route path="/" element={<Homepage />}/>
       <Route path="about" element={<About />}/>
       <Route path="contact" element={<Contact />}/>

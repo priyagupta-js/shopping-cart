@@ -97,6 +97,13 @@
 .home , .about , .contact{
     font-weight: 600;
 }
+
+/* login-page */
+.login-page{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
 /* product styling */
  .product-main
  {
