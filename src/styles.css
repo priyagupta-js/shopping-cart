@@ -104,6 +104,15 @@
     justify-content: center;
     margin-top: 80px;
 }
+
+.submit-btn
+{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* login page styling */
 /* product styling */
  .product-main
  {
