@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter,Routes,Route} from "react-router-dom";
 import Homepage from "./Pages/Homepage";
 import About from "../src/Pages/About";
@@ -21,6 +22,7 @@ function App() {
       <Route path="displayproduct" element={<DisplayProduct />}/>
       </Routes>
     </BrowserRouter>
+    <Homepage />
   );
 }
 

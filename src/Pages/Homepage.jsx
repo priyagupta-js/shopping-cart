@@ -8,11 +8,11 @@ function Homepage() {
   return (
     <>
       <Navabar />
-      <Login />
-      {/* <div className="product-main"> */}
-        {/* <Product/> */}
-        {/* <DisplayProduct/> */}
-      {/* </div> */}
+      {/* <Login /> */}
+      <div className="product-main">
+        <Product/>
+        <DisplayProduct/>
+      </div>
     </>
   );
 }
