@@ -11,6 +11,7 @@ function Login()
                 <label>Password</label><br/>
                 <input type="password" placeholder="password"/><br/>
                 <button type="button" className="submit-btn">Login</button>
+                <button>Submit</button>
             </form>
             </div>
         </>
