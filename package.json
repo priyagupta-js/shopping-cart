@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "homepage": "https://github.com/priyagupta-js/shopping-cart#readme",
   "bugs": {
     "url": "https://github.com/priyagupta-js/shopping-cart/issues"
   },
@@ -14,7 +13,6 @@
   "license": "ISC",
   "author": "",
   "scripts": {
-    "dev": "nodemon server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,7 +34,7 @@
     "@babel/preset-env": "^7.26.8",
     "@babel/preset-react": "^7.26.3",
     "babel-loader": "^9.2.1",
-    "react-router-dom": "^7.1.3",
+    "react-router-dom": "^7.1.5",
     "webpack-cli": "^6.0.1"
   },
   "eslintConfig": {
