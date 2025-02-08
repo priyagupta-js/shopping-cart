@@ -1,11 +1,11 @@
-import Navabar from "../Components/Navbar";
+import Navbar from "../Components/Navbar.js";
 import PImg from "../Assests/facecream.png";
-import product from "../productlist";
+// import product from "../productlist";
 function DisplayProduct ()
 {
 return(
     <>
-    <Navabar />
+    <Navbar />
         <div className="section">
             <div className="img-section">
                 <img className="prod-image"src={PImg} alt="..."/>

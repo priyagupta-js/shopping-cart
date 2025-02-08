@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import "../styles.css";
 
-function Navabar()
+function Navbar()
 {
 
     const [count,setCount] =useState(0);
@@ -42,4 +42,4 @@ function Navabar()
     );
 }
 
-export default Navabar;
+export default Navbar;
