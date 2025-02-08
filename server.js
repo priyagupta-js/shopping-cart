@@ -1,11 +1,15 @@
 const express = require('express')
 const app = express()
 const connectDB = require('./db');
-
+const dotenv = require('dotenv');
 const users = require('./src/Routes/routes')
-const PORT = 3000;
 
+
+
+dotenv.config();
 //body parser
+
+const PORT = process.env.PORT;
 app.use(express.json());
 
 //connect to database
