@@ -4,6 +4,10 @@ function Login()
 {
 
     const [isLogin , setIsLogin] = useState("true");
+    const toggleform = () =>{
+        setIsLogin(!isLogin);
+    }
+
     return(
         <>
             <div className="login-page">
@@ -22,7 +26,7 @@ function Login()
                 <label>Password</label><br/>
                 <input type="password" placeholder="password"/><br/>
                 <button type="button" className="submit-btn">{isLogin?'Login': 'Register'}</button>
-               <p>{isLogin ? `Don't have a account? Register`:`Already Registered , Login`} </p>
+               <p onClick={toggleform} className='toggle-link'>{isLogin ? `Don't have a account? Register`:`Already Registered , Login`} </p>
             </form>
             </div>
         </>
