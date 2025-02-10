@@ -3,17 +3,25 @@ import { useState } from 'react';
 function Login()
 {
 
-    const [isLogin , setIsLogin] = useState("false");
+    const [isLogin , setIsLogin] = useState("true");
     return(
         <>
             <div className="login-page">
-            <h3>{isLogin? 'Login': 'Register'}</h3>
+            <h2>{isLogin? 'Login': 'Register'}</h2>
             <form>
-            <label>Register Number </label><br/>
+            {!isLogin && (
+                <>
+                <label>Name </label><br/>
+                <input type="text" placeholder="Name"/><br/>
+                <label>Phone Number</label><br/>
+                <input type="number" placeholder="Phone Number"/><br/>
+                </>
+            )}
+                <label>Register Number </label><br/>
                 <input type="text" placeholder="Register Number"/><br/>
                 <label>Password</label><br/>
                 <input type="password" placeholder="password"/><br/>
-                <button type="button" className="submit-btn">Login</button>
+                <button type="button" className="submit-btn">{isLogin?'Login': 'Register'}</button>
                <p>{isLogin ? `Don't have a account? Register`:`Already Registered , Login`} </p>
             </form>
             </div>
