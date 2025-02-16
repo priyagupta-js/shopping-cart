@@ -5,7 +5,8 @@ import About from "../src/Pages/About.jsx";
 import Contact from "../src/Pages/Contact.jsx";
 import Account from "./Pages/Account.jsx";
 import Cart from "./Pages/Cart.jsx";
-import Login from "./Pages/Login";  
+import SignUp from "./Pages/SignUp.jsx"; 
+import Login from "./Pages/Login.jsx";  
 import DisplayProduct from "./Pages/DisplayProduct.js";
 console.log("App.js file is being loaded...");
 function App() {
@@ -15,6 +16,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />}/>
       <Route path="/" element={<Homepage />}/>
       <Route path="about" element={<About />}/>
       <Route path="contact" element={<Contact />}/>

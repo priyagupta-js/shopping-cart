@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 const SignUp = () =>{
 
     const [name ,setName] = useState("");
@@ -8,9 +8,9 @@ const SignUp = () =>{
     const [phoneno , setPhoneno] =useState("");
     const [password , setPassword] =useState("");
 
-handleSubmit()
+const handleSubmit = () =>
 {
-
+console.log("sign up");
 }
     return(
         <div className="signup-container">
