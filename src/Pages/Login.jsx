@@ -24,7 +24,7 @@ return(
                 <label>Password</label><br/>
                 <input type="password" placeholder="password"/><br/>
                 <button type="button" className="submit-btn" onClick={handleLogin}>Login</button>
-               <p>Don't have a account?</p><Link to="/signup">Register </Link>
+               <p className='toggle-link'>Don't have a account?</p><Link to="/signup">Register </Link>
             </form>
             </div>
             </div>

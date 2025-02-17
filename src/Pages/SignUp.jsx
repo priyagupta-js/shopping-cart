@@ -29,7 +29,7 @@ console.log("sign up");
                 <input type="password" placeholder="Password" onChange={(e) =>setPassword(e.target.value)}/><br/>
                 <button type="button">Register</button>
 </form>
-<p>Already have a account ?</p>
+<p className="toggle-link">Already have a account ?</p>
 <Link to="/login">Login</Link>
             </div>
         </div>
