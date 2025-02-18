@@ -1,18 +1,17 @@
 // import product from "../productlist";
 import Product from "../Components/Product.jsx";
 import Navbar from "../Components/Navbar";
-import Login from "../Pages/Login";
+// import Login from "../Pages/Login";
 import "../styles.css";
 import DisplayProduct from "./DisplayProduct";
 function Homepage() {
   return (
     <>
       <Navbar />
-      <Login />
-      {/* <div className="product-main">
+      <div className="product-main">
         <Product/>
-        <DisplayProduct/>
-      </div> */}
+        {/* <DisplayProduct/> */}
+      </div>
     </>
   );
 }

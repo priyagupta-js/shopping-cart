@@ -19,7 +19,7 @@ function Navbar()
     return(
         <div className="nav">
             <div className="nav-left">
-                <Link to="/" className="navlink"><div className="logo">Navbar</div></Link>
+                <Link to="/home" className="navlink"><div className="logo">Navbar</div></Link>
             </div>
             <div className="nav-right">
             <Link to="/" className="navlink"><div className="home">Home</div></Link>
