@@ -21,9 +21,7 @@ return(
             <div className='login-box'>
             <h2>Login</h2>
             <form>
-                <label>Register Number </label><br/>
                 <input type="text" placeholder="Register Number"/><br/>
-                <label>Password</label><br/>
                 <input type="password" placeholder="password"/><br/>
                 <button type="button" className="submit-btn" onClick={ () => navigate("/home")}>Login</button>
                <p className='toggle-link'>Don't have a account? <span className='link'><Link to="/signup">Register </Link></span></p>
