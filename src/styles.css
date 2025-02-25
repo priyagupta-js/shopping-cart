@@ -100,6 +100,11 @@
 
 /* login-page */
 .login-container , .signup-container{
+    background-image: url('./Assests/bg2.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,24 +114,24 @@
 
 }
 .login-box ,.signup-box{
-    background-color: grey;
-    padding: 2rem;
+    background-color: white;
+    padding: 3rem;
     border-radius:10px;
-    width: 300px;
+    width: 450px;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.7);
     font-size: 18px;
 }
 .login-box h2 , .signup-box h2{
     margin-bottom: 1rem;
     text-align: center;
-color: #fff;
+color: #000;
 }
 .login-box input , .signup-box input
 {
     width: 100%;
     padding: 10px 5px;
     border-radius: 5px;
-    border: none;
+    border: 2px solid #000;
     margin:8px 0;
 
 }
@@ -141,16 +146,15 @@ color: #fff;
 }
 
 .toggle-link{
+    text-align: center;
     margin-top: 12px;
-    color: #fff;
+    color: #000;
     cursor: pointer;
 }
-.toggle-link:hover
+.link:hover
 {
     text-decoration: underline;
 }
-
-
 .submit-btn
 {
     padding: 10px 20px;

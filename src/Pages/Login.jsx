@@ -26,7 +26,7 @@ return(
                 <label>Password</label><br/>
                 <input type="password" placeholder="password"/><br/>
                 <button type="button" className="submit-btn" onClick={ () => navigate("/home")}>Login</button>
-               <p className='toggle-link'>Don't have a account?</p><Link to="/signup">Register </Link>
+               <p className='toggle-link'>Don't have a account? <span className='link'><Link to="/signup">Register </Link></span></p>
             </form>
             </div>
             </div>
